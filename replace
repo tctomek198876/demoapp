@@ -1,0 +1,4 @@
+#!/bin/bash
+today=`date +%F`
+host=`hostname`
+sed -i "s%Hello World: src/main/webapp/index.jsp%$today $host%g" src/main/webapp/index.jsp
